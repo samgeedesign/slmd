@@ -314,7 +314,8 @@ input[type=submit]:active {
 /* Testimonials */
 /* ------------------------------------------------------ */
 
-.testimonial blockquote {
+.testimonial blockquote,
+.testimonial-bulk blockquote {
 	width: 50%;
 	line-height: 1.5;
 	font-family: 'hypatia-sans-pro', sans-serif;
@@ -331,7 +332,8 @@ input[type=submit]:active {
 	margin-bottom: 10px;
 }
 
-.testimonial cite {
+.testimonial cite,
+.testimonial-bulk cite {
 	text-align: center;
 	font-family: 'brandon-grotesque', sans-serif;
 	text-transform: uppercase;
@@ -345,6 +347,23 @@ input[type=submit]:active {
 
 .testimonial {
 	border-bottom: 3px solid #33BFCD;
+}
+
+.testimonial-bulk:after {
+	display: block;
+    height: 1px;
+    background-color: #BAC3C4;
+    content: " ";
+    width: 150px;
+    margin: 0 auto;
+    margin-top: 50px;
+	margin-bottom: 5px;
+    border-radius: 1000px;
+}
+
+.testimonial-bulk {
+	padding-top: 20px;
+	padding-bottom: 10px;
 }
 
 /* ------------------------------------------------------ */
@@ -378,7 +397,7 @@ input[type=submit]:active {
 .our-courses {
 	background-image: linear-gradient(rgba(228,232,234,0.8), rgba(228,232,234,0.8));
 	background-size: cover;
-    background-position: centre;
+    background-position: center;
 	border-bottom: 3px solid #33BFCD;
 	background-attachment: fixed;
 }
@@ -656,9 +675,19 @@ input[type=submit]:active {
 }
 
 .body-link:hover,
-.body-link:active {
+.body-link:active,
+.footer-link:hover,
+.footer-link:active {
 	color: rgba(16,17,22,0.61);
 }
+
+.footer-link:link,
+.footer-link:visited {
+	text-decoration: none;
+	color: #F0F0F0;
+	transition: color 0.2s;
+}
+
 
 /* ------------------------------------------------------ */
 /* TUTOR PROFILES */
@@ -827,4 +856,37 @@ h5 {
 .terms-list {
 	margin-left: 50px;
 	line-height: 2;
+}
+
+/* ---------------------- */
+/* REGISTER */
+/* ---------------------- */
+
+.register-title {
+	margin-top: 30px;
+}
+
+
+
+
+.register-info {
+	float: left;
+	display: block;
+	width: 60%;
+	padding: 30px 5% 0 10%;
+}
+
+.map {
+	width: 35%;
+	height: 300px;
+	float: left;
+	display: block;
+	margin-right: 5%;
+}
+
+
+
+.register-intro {
+	background-size: cover;
+	background-color: rgba(247,247,247,1.00);
 }
