@@ -227,7 +227,6 @@ input[type=submit]:active {
     background-color: #d47553;
     border: 1px solid #d47553;
 	color: #fff;
-	margin: 5px 0px 5px 38%;
     }
 
 /* ------------------------------------------------------ */
@@ -884,9 +883,114 @@ h5 {
 	margin-right: 5%;
 }
 
+.form-top{
+  margin-top: 30px;
+}
+.panel{
+  box-shadow: 0 1px 6px 0 rgba(0,0,0,.12), 0 1px 6px 0 rgba(0,0,0,.12);
+  border-radius: 6px;
+    border: 0;
+}
+@-moz-document url-prefix() {
+    .form-control{
+      height: auto;
+    }
+}
+.panel-primary{
+  background-color: #2c3e50;
+  color: #fff;
+}
+.panel-primary>.panel-heading {
+    color: #fff;
+    font-size: 20px;
+    background-color: #2c3e50;
+    border-color: #2c3e50;
+}
+.btn-warning{
+  background-color: transparent;
+  border-color: #bdc3c7;
+}
 
 
-.register-intro {
-	background-size: cover;
-	background-color: rgba(247,247,247,1.00);
+
+
+.break {
+	display:block;
+	height: 240px;
+}
+
+
+
+.form-body {
+	background-color: #fff;
+	margin-top: 20px;
+}
+
+.actual-form {
+	padding: 10px 0 50px 0;
+	width: 60%;
+	margin-left: 20%;
+}
+
+label span {
+	color: #BC2A54;
+	font-weight: 600;
+}
+
+input {
+	padding: 10px;
+	width: 100%;
+}
+.labels {
+	margin-bottom: 7px;
+}
+
+.checkbox {
+	margin-bottom: 20px;
+}
+
+.form-heading {
+	font-size: 90%;
+	margin-top: 50px;
+}
+.form-heading:after,
+.blue-line {
+	display: block;
+    height: 1px;
+    background-color: #33BFCD;
+    content: " ";
+    width: 100%;
+    margin-top: 5px;
+	margin-bottom: 15px;
+    border-radius: 1000px;
+}
+
+.entry-box {
+	margin-bottom: 25px;
+}
+
+::placeholder {
+	color:rgba(127,127,127,1.00);
+	font-size: 80%;
+}
+
+.form-comment {
+	font-size: 80%;
+	margin-bottom: 10px;
+}
+
+.select-list {
+	margin-bottom: 25px;
+}
+
+textarea {
+	width: 100%;
+	height: 100px;
+}
+
+
+
+.error-text {
+	text-align: center;
+	margin: -20px 0 20px 0;
 }

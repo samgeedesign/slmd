@@ -13,6 +13,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,700;0,800;1,400&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Bitter&display=swap" rel="stylesheet">
 	<style type="text/css"></style>
+	 <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>HTML5 Contact Form To Send Email On Form Submission - reusable form</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="/slmd/resources/js/form.js"></script>
 <title>Register</title>
 	<script>var __adobewebfontsappname__="dreamweaver"</script>
 	<script src="http://use.edgefonts.net/raleway:n1:default.js" type="text/javascript"></script>
@@ -63,8 +68,82 @@ If you have any queries or concerns, please don’t hesitate to <a class="body-l
 		</div>
 	</section>
 	
+	<div class="break"></div>
+	
 	<section class="signup-form">
-	<p>Hello</p>
+		 <h3 class="form-title">SIGN-UP FORM</h3>
+		<div class="form-body">
+			<div class="shadow-strip3"></div>
+			<form method="post" action="/slmd/vendors/handler.php" class="contact-form">
+				<div class="actual-form">
+					<p class="form-heading">Your Details</p>
+					<div class="labels"><label for="name">Your Name (Parent/Guardian) <span>*</span></label></div>
+					<div class="entry-box"><input type="text" name="name" id="name" placeholder=" " required></div>
+					
+					<div class="labels"><label for="email">Email Address <span>*</span></label></div>
+					<div class="entry-box"><input type="email" name="email" id="email" placeholder=" " required></div>
+					
+					<div class="labels"><label for="number">Emergency Contact Number <span>*</span></label></div>
+					<div class="entry-box"><input type="text" name="number" id="number" placeholder=" " required></div>
+					
+					<p class="form-heading">Your Child's Details</p>
+					<div class="labels"><label for="child-name">Your Child's Name <span>*</span></label></div>
+					<div class="entry-box"><input type="text" name="child-name" id="child-name" placeholder=" " required></div>
+					
+					<div class="labels"><label for="dob">Date of Birth <span>*</span></label></div>
+					<div class="entry-box"><input type="text" name="dob" id="dob" placeholder=" " required></div>
+					
+					<div class="labels"><label for="instrument">Instrument Played (if applicable)</label></div>
+					<p class="form-comment">If your child would like to play more than one instrument on the course, please add any others to the 'additional instruments' field and include the approximate standard for each instrument.</p>
+					<div class="entry-box"><input type="text" name="instrument" id="instrument" placeholder="e.g. Alto Saxophone"></div>
+					
+					<div class="labels"><label for="instrument">Last Grade Passed</label></div>
+					<p class="form-comment">Please select the most recent graded music exam your child has passed. <br>If they have not taken any exams recently, please select their approximate standard.</p>
+					<select class="select-list" name="grade" id="grade">
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="8+">8+</option>
+                            </select>
+					
+					<div class="labels"><label for="add-instrument">Additional Instruments Played</label></div>
+					<p class="form-comment">Please include approximate standards for each additional instrument.<br>Only fill out this section if your child would like to play any of their other instruments on the course.</p>
+					<div class="entry-box"><input type="text" name="add-instrument" id="add-instrument" placeholder="e.g. Viola (Grade 6)"></div>
+					
+					<div class="labels"><label for="masterclass">Would your child like to take part in a Solo Masterclass?</label></div>
+					<p class="form-comment">If you would like to take part in a masterclass please make sure your child brings along a solo piece (with piano accompaniment if applicable) to perform to a friendly audience. It can be something they are currently working on or a finished piece.</p>
+						<select class="select-list" name="masterclass" id="masterclass">
+                                <option value="No" selected>No</option>
+                                <option value="Yes">Yes</option>
+                            </select>
+					
+					<div class="blue-line"></div>
+					
+					<div class="labels"><label for="newsletter">Please tick this box if you are happy to recieve email communications about our course.</label></div>
+					<div class="checkbox"><input type="checkbox" name="newsletter" id="newsletter"></div>
+					
+					<div class="labels"><label for="other">Please advise us of any other information that we should be aware of, including any allergies or relevant medical conditions.</label></div>
+					<p class="form-comment">Any information you provide will be treated in complete confidence.</p>
+					<div class="entry-box"><textarea name="other" id="other"></textarea></div>
+					
+					<input type="submit" value="Submit Form">
+				</div>
+			</form>
+			 <div id="error_message" style="width:100%; height:100%; display:none; ">
+                                    <h4>
+                                        Error
+                                    </h4>
+                                    <p class="error-text">Sorry there was an error sending your form. Please contact us for assistance.</p> 
+                                </div>
+			 <div id="success_message" style="width:100%; height:100%; display:none; ">
+					<p class="error-text">Success! Your form was submitted successfully.</p>
+			</div>
+		</div>
 	</section>
 	
 	<footer>
